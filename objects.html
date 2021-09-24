@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const test = {
+      firstName: "Hitarth",
+      lastName: "Kasnara",
+      age: 2021 - 1999,
+      city: "Ahmedabad",
+    };
+
+    //using dot notation
+    /*
+let t = test.firstName;
+console.log(t);
+*/
+
+    //using bracket notation
+
+    /*
+let g = test["lastName"];
+console.log(g);
+
+let nameKey = "Name";
+console.log(test["first" + nameKey] + " " + test["last" + nameKey]);
+*/
+
+    console.log(`Choose any of the following: 
+                firstName,lastName,age,city
+`);
+    let choose = prompt(
+      "Choose any of the following :firstName,lastName,age,city"
+    );
+    // let choice = test.firstName || test.lastName || test.city || test.age;
+    choice = console.log(test[choose]);
+
+    // switch (choice) {
+    //   case "firstName":
+    //     console.log(test.firstName);
+    //     break;
+    //   case "lastName":
+    //     console.log(test.lastName);
+    //     break;
+    //   case "age":
+    //     console.log(test.age);
+    //     break;
+    //   case "city":
+    //     console.log(test.city);
+    //     break;
+
+    //   default:
+    //     console.log("Choose any one option");
+    //     break;
+    // }
+  </script>
+</html>

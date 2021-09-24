@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+
+    <script>
+      function names() {
+        let a = document.getElementById("getname").value;
+        var greet = "Hello " + a;
+        console.log(greet);
+        document.getElementById("display").innerHTML = greet;
+
+        return greet;
+      }
+    </script>
+  </head>
+  <body
+    style="
+      background-color: lemonchiffon;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    "
+  >
+    <h1>JavaScript is Fun ,but so is HTML and Css!</h1>
+
+    <h4 style="color: red">
+      You can learn JavaScript with HTML and Css, but for DOM Manipulation it's
+      useful to have some basic ideas of HTML and Css. You can learn more about
+      it on
+      <a style="color: purple" target="_blank" href="https://www.udemy.com/"
+        >Udemy.</a
+      >
+    </h4>
+
+    <h3>Another Heading</h3>
+    <p>Just another paragraph</p>
+
+    <img src="imgs.jpg" alt="Calligraphy" height="25%" width="25%" />
+
+    <form action="" method="post" style="border: 3px solid black">
+      <h4>Please fill this form :)</h4>
+      <h3 id="display" style="color: seagreen"></h3>
+      <input type="text" id="getname" />
+      <input type="button" value="OK!" onclick="names()" />
+      <br /><br />
+    </form>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 45px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    h4 {
+      margin-bottom: 25px;
+    }
+
+    h4 > a {
+      background-color: greenyellow;
+    }
+
+    img {
+      padding-top: 2%;
+    }
+
+    input {
+      font-size: 15px;
+      color: brown;
+      border: 2px solid green;
+      border-radius: 4px;
+      margin-left: 5px;
+    }
+
+    form {
+      margin-top: 2%;
+      box-sizing: border-box;
+      align-items: center;
+      text-align: center;
+      width: 25%;
+      border-radius: 15px;
+    }
+  </style>
+</html>
